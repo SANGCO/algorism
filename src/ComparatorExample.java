@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Dog implements Comparator<Dog>, Comparable<Dog> {
+class Dog implements Comparable<Dog>, Comparator<Dog> {
     private String name;
     private int age;
     Dog() {
@@ -19,16 +19,16 @@ class Dog implements Comparator<Dog>, Comparable<Dog> {
         return age;
     }
 
-    // Overriding the compare method to sort the age
-    @Override
-    public int compare(Dog d, Dog d1) {
-        return d.age - d1.age;
-    }
-
     // Overriding the compareTo method
     @Override
     public int compareTo(Dog d) {
         return (this.name).compareTo(d.name);
+    }
+
+    // Overriding the compare method to sort the age
+    @Override
+    public int compare(Dog d, Dog d1) {
+        return d.age - d1.age;
     }
 }
 
