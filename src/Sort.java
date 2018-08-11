@@ -8,7 +8,7 @@ public class Sort {
         int [] a = new int[]{8, 6, 5, 9, 1};
         Arrays.sort(a);
         System.out.println(Arrays.toString(a));
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         for (int b : a) {
             list.add(b);
         }

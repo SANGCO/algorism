@@ -8,7 +8,7 @@ public class Fibonacci {
         Scanner scanner = new Scanner(System.in);
         int input = scanner.nextInt();
         intArray = new Integer[input];
-        for (int i = 0; i < input; i++) {
+        for (int i = 0; i < input; i++) { // i <= input <- 배열이니껜 이라면 ArrayOutOfBoundsExcepiton
             System.out.println(Fibonacci(i));
         }
     }
