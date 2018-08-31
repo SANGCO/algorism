@@ -5,7 +5,7 @@ public class a02_BubbleSort {
         int index = 0, min = 9999, temp;
 
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < (array.length - 1) - i; j++) { // array 인덱스는 0부터 시작하니 (array.length - 1)
+            for (int j = 0; j < ((array.length - 1) - i); j++) { // array 인덱스는 0부터 시작하니 (array.length - 1)
                 if (array[j] > array[j + 1]) { // array[j]가 크면
                     temp = array[j];
                     array[j] = array[j + 1];
