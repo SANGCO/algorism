@@ -6,7 +6,7 @@ public class a01_SelectionSort {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = i; j < array.length; j++) {
-                if (min > array[j]) { // < min보다 작으면
+                if (min > array[j]) { // > min보다 작으면
                     min = array[j];
                     index = j;
                 }
